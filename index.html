@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Land, Data & Nature</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Data Science · Land · Nature</p>
+      <h1 class="hero-title">
+        Turning land &amp; nature<br>
+        <em>into legible data.</em>
+      </h1>
+      <p class="hero-sub">
+        I'm a data science apprentice building at the intersection of agriculture,
+        landed estates, and natural capital — helping landowners and organisations
+        make better decisions with better information.
+      </p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="about.html" class="btn btn-ghost">About Me</a>
+      </div>
+    </div>
+    <div class="hero-grid-label">51.5°N</div>
+  </header>
+
+  <section class="pillars">
+    <div class="container">
+      <div class="pillar-grid">
+
+        <div class="pillar">
+          <div class="pillar-icon">⌾</div>
+          <h3>Agri-Data</h3>
+          <p>Yield mapping, soil analytics, precision agriculture dashboards — making farm data work as hard as the land itself.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">⬡</div>
+          <h3>Estate Advisory</h3>
+          <p>Data and technology strategy for landed estates: asset registers, reporting automation, and decision-support tools.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">◈</div>
+          <h3>Natural Capital</h3>
+          <p>Quantifying ecosystem services, biodiversity net gain, and carbon — translating environmental value into credible numbers.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="latest">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Latest Work</span>
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="project-cards" id="latest-projects">
+        <!-- Populated by projects-data.js -->
+        <div class="project-card placeholder-card">
+          <div class="card-tag">Coming Soon</div>
+          <h4>First project underway</h4>
+          <p>Check back shortly — the first analysis will be published here.</p>
+        </div>
+      </div>
+      <a href="projects.html" class="btn btn-outline">All Projects →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Your Name</span>
+      <span class="footer-note">Data Science Apprentice · Est. 2025</span>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

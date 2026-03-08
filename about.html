@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Background</span>
+      <h1>About Me</h1>
+    </div>
+  </div>
+
+  <section class="about-body">
+    <div class="container about-grid">
+
+      <div class="about-main">
+        <p class="lead">
+          I'm a data science apprentice working toward a BSc, expected to graduate in August 2027.
+          Alongside my studies, I'm building expertise at the crossroads of land management,
+          agriculture, and environmental data.
+        </p>
+
+        <p>
+          Over four years of apprenticeship I've developed hands-on skills across the full
+          data stack — from wrangling messy real-world datasets to building automated pipelines
+          and communicating insight to non-technical audiences. I'm now applying those skills
+          to a set of domains I find genuinely compelling: food production, rural land use,
+          and the natural environment.
+        </p>
+
+        <p>
+          This site is both a portfolio and a working notebook. The projects here are real
+          analyses — not toy examples — and I publish my code, methodology, and findings openly.
+          I'm interested in working with farmers, estate managers, conservation organisations,
+          and anyone trying to make sense of their land data.
+        </p>
+
+        <h3>Areas of Focus</h3>
+        <ul class="focus-list">
+          <li><strong>Agri-data consultancy</strong> — Precision agriculture, farm performance analytics, soil and yield data.</li>
+          <li><strong>Landed estate advisory</strong> — Technology strategy, data infrastructure, and reporting for rural estates.</li>
+          <li><strong>Natural capital</strong> — Ecosystem service valuation, biodiversity metrics, carbon accounting.</li>
+        </ul>
+
+        <h3>Skills &amp; Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">R</div>
+          <div class="skill-tag">SQL</div>
+          <div class="skill-tag">GIS / QGIS</div>
+          <div class="skill-tag">Pandas / NumPy</div>
+          <div class="skill-tag">Data Visualisation</div>
+          <div class="skill-tag">Machine Learning</div>
+          <div class="skill-tag">Automation</div>
+          <div class="skill-tag">Git / GitHub</div>
+          <div class="skill-tag">APIs</div>
+        </div>
+      </div>
+
+      <aside class="about-aside">
+        <div class="aside-block">
+          <h4>Currently</h4>
+          <p>Data Science Apprentice<br><em>BSc in progress</em></p>
+        </div>
+        <div class="aside-block">
+          <h4>Based</h4>
+          <p>England, UK</p>
+        </div>
+        <div class="aside-block">
+          <h4>Graduating</h4>
+          <p>August 2027</p>
+        </div>
+        <div class="aside-block">
+          <h4>Interests</h4>
+          <p>Farming, countryside, land management, environmental data, open-source tools</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%;text-align:center;margin-top:1rem;">Get in Touch</a>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Your Name</span>
+      <span class="footer-note">Data Science Apprentice · Est. 2025</span>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

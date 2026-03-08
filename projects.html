@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h1>Projects</h1>
+      <p class="page-hero-sub">Open analyses, tools, and write-ups from my work in land, agriculture, and nature data.</p>
+    </div>
+  </div>
+
+  <section class="projects-section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProjects('agri', this)">Agri-Data</button>
+        <button class="filter-btn" onclick="filterProjects('estate', this)">Estate</button>
+        <button class="filter-btn" onclick="filterProjects('nature', this)">Natural Capital</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- TEMPLATE: Copy this block to add a new project -->
+        <!--
+        <article class="project-card-full" data-category="agri">
+          <div class="card-meta">
+            <span class="card-tag">Agri-Data</span>
+            <span class="card-date">Month Year</span>
+          </div>
+          <h3><a href="projects/project-slug.html">Project Title</a></h3>
+          <p>One or two sentence summary of what you did and what you found.</p>
+          <div class="card-tools">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+          </div>
+          <a href="projects/project-slug.html" class="card-link">Read more →</a>
+        </article>
+        -->
+
+        <!-- PLACEHOLDER: Remove once first real project is added -->
+        <article class="project-card-full placeholder-card" data-category="all">
+          <div class="card-meta">
+            <span class="card-tag coming">Coming Soon</span>
+            <span class="card-date">2025</span>
+          </div>
+          <h3>First project in progress</h3>
+          <p>
+            The first analysis will appear here shortly. Ideas in the pipeline include
+            exploring publicly available Defra agricultural survey data, mapping
+            hedgerow coverage from OS open data, or modelling carbon sequestration
+            potential from land use change.
+          </p>
+          <div class="card-tools">
+            <span>Python</span><span>GIS</span><span>Open Data</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="project-note">
+    <div class="container">
+      <div class="note-box">
+        <h4>How these projects are built</h4>
+        <p>
+          Every project here is published with full code on GitHub. I use publicly available
+          datasets wherever possible (Defra, ONS, OS OpenData, UKCEH, Copernicus) and document
+          my methodology in full so findings are reproducible. If you spot an error or want to
+          collaborate, please get in touch.
+        </p>
+        <a href="https://github.com/yourusername" class="btn btn-outline" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Your Name</span>
+      <span class="footer-note">Data Science Apprentice · Est. 2025</span>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script>
+    function filterProjects(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.project-card-full').forEach(card => {
+        const cat = card.dataset.category;
+        card.style.display = (category === 'all' || cat === category || cat === 'all') ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

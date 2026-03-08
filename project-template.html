@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Title | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../projects.html" class="active">Projects</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <article class="project-page">
+    <div class="container project-container">
+
+      <header class="project-header">
+        <a href="../projects.html" class="back-link">← All Projects</a>
+        <div class="project-meta">
+          <span class="card-tag">Agri-Data</span> <!-- Change category -->
+          <span class="card-date">Month Year</span>
+        </div>
+        <h1>Project Title Goes Here</h1>
+        <p class="project-summary">
+          A one-paragraph summary of what this project is, why it matters, and what you found.
+          Write this as if someone who doesn't know you is reading it cold.
+        </p>
+        <div class="project-tools-row">
+          <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>QGIS</span>
+        </div>
+        <a href="https://github.com/yourusername/project-repo" class="btn btn-outline" target="_blank">View Code on GitHub →</a>
+      </header>
+
+      <div class="project-body">
+
+        <h2>Background</h2>
+        <p>
+          Why did you choose this topic? What problem or question were you trying to answer?
+          What data sources did you use and why?
+        </p>
+
+        <h2>Data &amp; Methodology</h2>
+        <p>
+          Describe your data sources, how you cleaned and processed them, and your analytical
+          approach. Be specific — this section builds credibility and lets others reproduce your work.
+        </p>
+
+        <!-- Insert charts/maps/images here as: -->
+        <!-- <figure><img src="../assets/images/chart.png" alt="Chart description"><figcaption>Figure 1: Description</figcaption></figure> -->
+
+        <h2>Findings</h2>
+        <p>
+          What did you find? Lead with the most interesting or surprising result.
+          Support with charts, maps, or tables.
+        </p>
+
+        <h2>Limitations &amp; Next Steps</h2>
+        <p>
+          What are the caveats? What would you do differently or explore next?
+          Honest self-assessment builds trust.
+        </p>
+
+        <h2>Code</h2>
+        <p>
+          All code for this project is available on GitHub:
+          <a href="https://github.com/yourusername/project-repo" target="_blank">github.com/yourusername/project-repo</a>.
+        </p>
+
+      </div>
+
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Your Name</span>
+      <span class="footer-note">Data Science Apprentice · Est. 2025</span>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
